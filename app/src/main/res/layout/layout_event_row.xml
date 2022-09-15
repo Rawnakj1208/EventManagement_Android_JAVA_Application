@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tvEventName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Event Tittle"
+            android:textSize="22sp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tvEventDateTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Event Date"
+            android:layout_marginLeft="15dp"
+            android:textSize="22sp"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvEventPlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="16sp"
+        android:text="Event Place"/>
+
+
+       <!-- <TextView
+            android:id="@+id/tvEventEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            android:text="EvenEmail"/>
+
+        <TextView
+            android:id="@+id/tvEventcapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            android:text="Capacity"/>
+
+        <TextView
+            android:id="@+id/tvEventBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            android:text="Budget"/>
+
+        <TextView
+            android:id="@+id/tvEventPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            android:text="Phone"/>
+        <TextView
+            android:id="@+id/tvEventDiscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            android:text="Discription"/>
+
+
+-->
+
+</LinearLayout>

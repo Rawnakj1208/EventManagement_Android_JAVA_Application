@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffdd00">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Event Information"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <TableRow>
+            <TextView
+                android:text="Name"/>
+            <EditText
+                android:id="@+id/name_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="textPersonName"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Place"/>
+            <EditText
+                android:id="@+id/place_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Type"/>
+
+            <RadioGroup
+                android:id="@+id/radio_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/btn_indoor"
+                    android:text="Indoor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+                <RadioButton
+                    android:id="@+id/btn_outdoor"
+                    android:text="Outdoor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+                <RadioButton
+                    android:id="@+id/btn_online"
+                    android:text="Online"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Date &amp; Time"/>
+            <EditText
+                android:id="@+id/date_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="date"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Capacity"/>
+            <EditText
+                android:id="@+id/capacity_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="numberSigned"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Budget"/>
+            <EditText
+                android:id="@+id/budget_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Email"/>
+            <EditText
+                android:id="@+id/email_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Phone"/>
+            <EditText
+                android:id="@+id/phone_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="phone"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Description"/>
+            <EditText
+                android:id="@+id/description_id"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:lines="3"/>
+        </TableRow>
+
+        <TextView
+            android:id="@+id/result_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/white"
+            android:textColor="#ff0000"
+            android:gravity="center"
+            android:text="Error message will be here"
+            android:layout_column="4"/>
+
+
+    </TableLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Cancel"
+            android:backgroundTint="#ffdd00"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/share_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Share"
+            android:backgroundTint="#ffdd00"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Save"
+            android:backgroundTint="#ffdd00"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+
+</LinearLayout>
